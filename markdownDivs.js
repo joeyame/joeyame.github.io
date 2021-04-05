@@ -1,5 +1,6 @@
-head = document.getElementsByTagName("head")[0];
-head.innerHTML += "<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+var scr = document.createElement("SCRIPT");
+scr.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
+document.getElementsByTagName('head')[0].appendChild(scr);
 
 var all = document.getElementsByTagName("div");
 
