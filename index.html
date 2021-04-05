@@ -1,6 +1,15 @@
+
 <html>
-<div markdown="1">
-  # Testing markdown!
-  This is a *Markdown* Paragraph.
-</div>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
+</body>
 </html>
