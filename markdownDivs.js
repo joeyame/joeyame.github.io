@@ -5,6 +5,7 @@
 var all = document.getElementsByTagName("div");
 
 for(var i=0, max=all.length; i<max; i++) {
+  console.log(all[i].getAttribute("markdown"));
   if(all[i].getAttribute("markdown") == "1") {
     marked(all[i].innerHTML);
   }
